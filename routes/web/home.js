@@ -19,4 +19,8 @@ router.get("/register",function(req,res){
    res.render("register/registerstart")
 });
 
+router.get("/loginzwei", function(req,res){
+    res.render("login/loginzwei");
+    });
+
 module.exports = router;
