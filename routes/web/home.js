@@ -1,5 +1,4 @@
 var express = require("express");
-
 var router = express.Router();
 
 router.get("/", function(req,res){
@@ -16,11 +15,34 @@ router.get("/login",function(req,res){
 });
 
 router.get("/register",function(req,res){
-   res.render("register/registerstart")
+   res.render("register/registerchoose");
 });
 
-router.get("/loginzwei", function(req,res){
-    res.render("login/loginzwei");
-    });
+router.get("/premium",function(req,res){
+    res.render("home/premium")
+})
+
+router.get("/register/WGReg",function(req,res){
+    res.render("register/registerWG/WGRegister");
+});
+
+router.get("/register/WgRegEnd", function(req,res){
+   res.render("register/registerWG/WGregisterReg");
+});
+
+router.get("/register/WGregWG",function(req,res){
+    res.render("register/registerWG/WGregisterAngWG");
+});
+
+router.get("/register/WGregWM",function(req,res){
+    res.render("register/registerWG/WGregisterAngWM");
+})
+
+router.get("/register/SReg", function(req,res){
+   res.render("register/registerSuchender/SuchenderStart");
+});
+router.get("/register/SRegEnd", function(req,res){
+    res.render("register/registerSuchender/SuchenderReg");
+});
 
 module.exports = router;

@@ -1,0 +1,81 @@
+<%- include ("../../_partial/_header"); %>
+
+<div class="row justify-content-center">
+    <div class="col-md-auto">
+        <h1 style="color:#FFA500"> Registrierung - Angaben zu dir </h1>
+        <div class="p-2"/>
+    </div>
+</div>
+
+<div class="container " >
+    <div class="d-flex p-2 justify-content-center" style="background-color:#FFA500; border-radius: 10px;">
+
+        <form>
+            <div class="form-group">
+                <div class="form-group row my-1 mr-2">
+                    <div class="col">
+                        <input type="Vorname" class="form-control" id="SVorname" placeholder="Vorname">
+                    </div>
+                </div>
+                <div class="form-group row my-1 mr-2">
+                    <div class="col">
+                        <input type="Nachname" class="form-control" id="SNachname" placeholder="Nachname">
+                    </div>
+                </div>
+
+                <form class="form-inline my-1 mr-2">
+                    <select class="form-select" id="inlineFormCustomSelectPref">
+                        <option selected>Geschlecht</option>
+                        <option value="1">Männlich</option>
+                        <option value="2">Weiblich</option>
+                        <option value="3">Divers</option>
+                    </select>
+
+                    <div class="form-inline my-1 mr-2">
+                        <select class="form-select" id="inlineFormCustomSelectPref">
+                            <option selected>Party</option>
+                            <option value="1">Ja</option>
+                            <option value="2">Nein</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inline my-1 mr-2">
+                        <select class="form-select" id="inlineFormCustomSelectPref">
+                            <option selected>Raucher</option>
+                            <option value="1">Ja</option>
+                            <option value="2">Nein</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inline my-1 mr-2">
+                        <select class="form-select" id="inlineFormCustomSelectPref">
+                            <option selected>Vegetarier</option>
+                            <option value="1">Ja</option>
+                            <option value="2">Nein</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inline my-1 mr-2">
+                        <select class="form-select" id="inlineFormCustomSelectPref">
+                            <option selected>Veganer</option>
+                            <option value="1">Ja</option>
+                            <option value="2">Nein</option>
+                        </select>
+                    </div>
+                    <div class="p-1"/>
+                </form>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="p-2"/>
+
+<div class="row">
+    <div class="p-1"/>
+    <button type="submit" class="col-1 offset-3 btn" style="background-color:#FFA500; color:white">Zurück</button>
+    <a href="/register/SRegEnd"><button type="submit" class="col-1 offset-4 btn" style="background-color:#FFA500; color:white">Weiter</button> </a>
+</div>
+
+
+<%- include ("../../_partial/_footer"); %>

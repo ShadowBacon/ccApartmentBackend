@@ -7,6 +7,8 @@ var router = express.Router();
 
 
 router.use("/", require("./home"));
+router.use("/loginuser", require("./login/login"));
+router.use("/register", require("./register/register"))
 
 
 module.exports = router;

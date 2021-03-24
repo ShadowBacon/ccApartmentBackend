@@ -1,5 +1,47 @@
 <%- include ("../_partial/_header"); %>
 
-<a href="/loginzwei"><button>Klick!</button></a>
+<div class="row justify-content-center">
+    <div class="col-md-auto">
+        <h1 style="color:#FFA500"> Logge dich hier mit deinen Datein ein. </h1>
+        <div class="p-2"/>
+    </div>
+</div>
+
+<div class="container " >
+    <div class="d-flex p-2 justify-content-center" style="background-color:#FFA500; border-radius: 10px;">
+
+        <form>
+            <div class="form-group">
+                <div class="form-group row my-1 mr-2">
+                    <div class="col">
+                        <input type="E-Mail" class="form-control" id="SVorname" placeholder="E-Mail">
+                    </div>
+                </div>
+                <div class="form-group row my-1 mr-2">
+                    <div class="col">
+                        <input type="password" class="form-control" id="SNachname" placeholder="Passwort">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="p-2"/>
+
+<div class="row">
+    <div class="p-1"/>
+
+    <a href="api/fblog/fibLogin"><button type="submit" class="col-1 offset-7 btn" style="background-color:#FFA500; color:white">Login</button></a>
+
+</div>
+<p/>
+<a href="api/fbreg/fibRegister">    <button> Register</button>           </a>
+<p/>
+<a href="api/fblog/fibLogout">      <button> Logout</button>             </a>
+<p/>
+<a href="api/fbreg/fibAddUserData"> <button> Add Data</button>              </a>
+<p/>
+<a href="api/fbreg/fibGetData">     <button> Read Data </button>        </a>
 
 <%- include ("../_partial/_footer"); %>
