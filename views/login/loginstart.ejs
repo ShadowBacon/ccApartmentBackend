@@ -7,33 +7,35 @@
     </div>
 </div>
 
-<div class="container " >
-    <div class="d-flex p-2 justify-content-center" style="background-color:#FFA500; border-radius: 10px;">
 
-        <form>
-            <div class="form-group">
+
+
+<div class="container " >
+    <form method="POST" action="/login">
+        <div class="d-flex p-2 justify-content-center" style="background-color:#FFA500; border-radius: 10px;">
+
+
+            <div class="form-group" >
                 <div class="form-group row my-1 mr-2">
                     <div class="col">
-                        <input type="E-Mail" class="form-control" id="LogVorname" placeholder="E-Mail">
+                        <input type="E-Mail" class="form-control" id="LogEMail" name="LogEMail" placeholder="E-Mail">
                     </div>
                 </div>
                 <div class="form-group row my-1 mr-2">
                     <div class="col">
-                        <input type="password" class="form-control" id="LogNachname" placeholder="Passwort">
+                        <input type="password" class="form-control" id="LogPasswort" name="LogPasswort" placeholder="Passwort">
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+        <div class="p-2"/>
+        <div class="row">
+            <div class="p-1"/>
+            <button type="submit" class="col-1 offset-7 btn" style="background-color:#FFA500; color:white">Login</button>
+        </div>
+    </form>
 </div>
 
-<div class="p-2"/>
 
-<div class="row">
-    <div class="p-1"/>
-
-    <a href="/SHome"><button type="submit" class="col-1 offset-7 btn" style="background-color:#FFA500; color:white">Login</button></a>
-
-</div>
 
 <%- include ("../_partial/_footer"); %>
