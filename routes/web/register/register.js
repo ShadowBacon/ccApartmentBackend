@@ -85,6 +85,8 @@ router.post("/WGRegWM", function(req,res,next){
 
     if(Raucher != "Raucher"){
         Raucher = "Nichtraucher";
+    }else{
+        Raucher = "Raucher";
     }
 
     switch(Ernaehrung) {
@@ -159,45 +161,45 @@ router.post("/WGRegWM", function(req,res,next){
     var HM = req.body.Smz;
 
     if(HB != 1){
-        HB = 0;
+        HB = "0";
     }else{
-        HB = 1;
+        HB = "1";
     }
 
     if(HV != 1){
-        HV = 0;
+        HV = "0";
     }else{
-        HV = 1;
+        HV = "1";
     }
 
     if(HL != 1){
-        HL = 0;
+        HL = "0";
     }else{
-        HL = 1;
+        HL = "1";
     }
 
     if(HS != 1){
-        HS = 0;
+        HS = "0";
     }else{
-        HS = 1;
+        HS = "1";
     }
 
     if(HR != 1){
-        HR = 0;
+        HR = "0";
     }else{
-        HR = 1;
+        HR = "1";
     }
 
     if(HF != 1){
-        HF = 0;
+        HF = "0";
     }else{
-        HF = 1;
+        HF = "1";
     }
 
     if(HM != 1){
-        HM = 0;
+        HM = "0";
     }else{
-        HM = 1;
+        HM = "1";
     }
 
     //Interessen
@@ -208,33 +210,33 @@ router.post("/WGRegWM", function(req,res,next){
     var ISp = req.body.Wsp;
 
     if(IPo != 1){
-        IPo = 0;
+        IPo = "0";
     }else{
-        IPo = 1;
+        IPo = "1";
     }
 
     if(IK != 1){
-        IK = 0;
+        IK = "0";
     }else{
-        IK = 1;
+        IK = "1";
     }
 
     if(IN != 1){
-        IN = 0;
+        IN = "0";
     }else{
-        IN = 1;
+        IN = "1";
     }
 
     if(IT != 1){
-        IT = 0;
+        IT = "0";
     }else{
-        IT = 1;
+        IT = "1";
     }
 
     if(ISp != 1){
-        ISp = 0;
+        ISp = "0";
     }else{
-        ISp = 1;
+        ISp = "1";
     }
 
 var jsonMatchSchema = {
@@ -262,6 +264,7 @@ var jsonMatchSchema = {
 }
 
     console.log(jsonMatchSchema);
+
     res.render("register/registerWG/WGregisterReg");
 
 });
