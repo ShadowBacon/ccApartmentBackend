@@ -35,7 +35,7 @@ router.get("/WgRegEnd", function(req,res){
 router.post("/WGRegEnd", function(req,res,next){
     var email = req.body.RegWEmail;
     var passwort = req.body.RegWPasswort;
-    var passwortwdhl = rey.body.RegWPasswortWdhl;
+    var passwortwdhl = reg.body.RegWPasswortWdhl;
 
     res.render("home/WGHome");
 });
@@ -495,6 +495,10 @@ router.get("/SRegEnd", function(req,res){
 });
 
 router.post("/SRegEnd", function(req,res,next){
+    var email = req.body.SRegEmail;
+    var passwort = req.body.SRegPasswort;
+    var passwortwdhl = req.body.SRegPasswortWdhl;
+
     res.render("home/SHome");
 });
 
