@@ -18,14 +18,13 @@ router.post("/WGReg", function(req,res,next){
 
     var jsonWG = {
         strasse: Straße,
-        hausnummer:Nr,
-        ort:Stadt,
-        plz:PLZ,
-        beschreibung:Beschreibung
+        hausnummer: Nr,
+        ort: Stadt,
+        plz: PLZ,
+        beschreibung: Beschreibung
     }
 
     res.render("register/registerWG/WGregisterAngWG");
-
 });
 
 router.get("/WgRegEnd", function(req,res){
@@ -35,7 +34,7 @@ router.get("/WgRegEnd", function(req,res){
 router.post("/WGRegEnd", function(req,res,next){
     var email = req.body.RegWEmail;
     var passwort = req.body.RegWPasswort;
-    var passwortwdhl = reg.body.RegWPasswortWdhl;
+    var passwortwdhl = req.body.RegWPasswortWdhl;
 
     res.render("home/WGHome");
 });
@@ -240,7 +239,6 @@ router.post("/WGRegWM", function(req,res,next){
 
 var jsonMatchSchema = {
     "geschlecht":Gender,
-    "alter":Alter,
     "raucher": Raucher,
     "ernaehrung":Ernaehrung,
     "taetigkeit":Taetigkeit,
